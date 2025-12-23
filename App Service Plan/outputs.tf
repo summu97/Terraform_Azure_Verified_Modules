@@ -1,6 +1,8 @@
+# Root module outputs for App Service Plan
+
 output "web_serverfarm_id" {
   description = "The ID of the App Service Plan created."
-  value       = module.avm-res-web-serverfarm.id
+  value       = module.avm-res-web-serverfarm.resource_id
 }
 
 output "web_serverfarm_name" {
@@ -8,7 +10,8 @@ output "web_serverfarm_name" {
   value       = module.avm-res-web-serverfarm.name
 }
 
-output "web_serverfarm_location" {
-  description = "The location of the App Service Plan."
-  value       = module.avm-res-web-serverfarm.location
+# Full resource object if needed
+output "web_serverfarm_resource" {
+  description = "The full resource object of the App Service Plan."
+  value       = module.avm-res-web-serverfarm.resource
 }
