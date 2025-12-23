@@ -30,4 +30,7 @@ managed_identities = {}
 # Optional values
 enable_telemetry = true
 lock              = null
-tags              = null
+tags = {
+  Environment = "Dev"
+  Project     = "TerraformDemo"
+}
